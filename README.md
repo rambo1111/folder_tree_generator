@@ -66,7 +66,3 @@ npm run tauri build
 Once the build is complete, you can find the installer/application bundle in the `src-tauri/target/release/bundle/` directory.
 
 -----
-
-## License
-
-This project is unlicensed and is protected by default copyright laws. You are not granted permission to use, copy, modify, or distribute this software without explicit consent from the copyright holder.
