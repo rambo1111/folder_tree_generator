@@ -1,0 +1,20 @@
+[package]
+name = "folder-tree-generator"
+version = "0.1.0"
+description = "A modern folder tree generator GUI"
+authors = ["Vibhaw"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5.2", features = [] }
+
+[dependencies]
+tauri = { version = "1.6.2", features = ["shell-open", "dialog-open"] }
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.117"
+walkdir = "2.5.0"
+dirs = "6.0.0"
+
+[features]
+# This now works because 'tauri' is listed in [dependencies]
+custom-protocol = ["tauri/custom-protocol"]

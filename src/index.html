@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folder Tree Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="panel control-panel">
+            <header>
+                <h1>Folder Tree Generator</h1>
+                <p>Select a folder and generate its structure.</p>
+            </header>
+
+            <section class="directory-selector">
+                <label for="directory-path">Root Directory</label>
+                <div class="input-group">
+                    <input type="text" id="directory-path" placeholder="Choose a directory..." readonly />
+                    <button id="browse-btn">Browse...</button>
+                </div>
+            </section>
+
+            <section class="ignore-list">
+                <label for="ignore-items">Items to Ignore</label>
+                <textarea id="ignore-items" rows="10" placeholder="e.g., node_modules, .git, target"></textarea>
+                <small>Enter one file or folder name per line.</small>
+            </section>
+
+            <button id="generate-btn" class="primary-btn">Generate Tree</button>
+        </div>
+
+        <div class="panel output-panel">
+            <header>
+                <h2>Output</h2>
+                <div class="button-group">
+                    <button id="copy-btn">Copy to Clipboard</button>
+                    <button id="clear-btn">Clear</button>
+                </div>
+            </header>
+            <div class="output-container">
+                <pre id="output-tree"><code>Select a directory and click 'Generate' to see the tree.</code></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

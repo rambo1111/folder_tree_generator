@@ -1,0 +1,47 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "Folder Tree Generator",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "dialog": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.tauri.dev",
+      "icon": [
+        "icons/icon.png",
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Folder Tree Generator",
+        "width": 1000,
+        "height": 750
+      }
+    ]
+  }
+}
